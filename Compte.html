@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device">
+    <title>Tout les Produits</title>
+    <link rel="stylesheet" href="ECFstyle.CSS">
+    <link rel="stylesheet" href="https://use.fontawesome.com/release/v5.13.0/css/all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+
+<body>
+
+    <!--Barre de navigation-->
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+              <a href="PAGE ACCUEIL SITE.html"><img src="LOGOSITE.png" width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="PAGE ACCUEIL SITE.html">Accueil</a></li>
+                    <li><a href="Boutique.html">Produits</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="">Compte</a></li>
+                </ul>
+             </nav>
+             <img src="cart.png" width="30px" height="30px">
+        </div>
+    </div>
+
+        <!-- Page Compte -->
+
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="AGIVA.png" width="100%">
+                    </div>
+                    
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Connexion</span>
+                                <span onclick="register()">Inscription</span>
+                                <hr id="Indicator">
+                            </div>
+
+                            <form id="LoginForm">
+                                <input type="text" placeholder="Pseudo">
+                                <input type="password" placeholder="Mot de passe">
+                                <button type="submit" class="btn">Connexion</button>
+                                <a href="">Mot de passe oublié</a>
+
+                            </form>
+
+                            <form id="RegForm">
+                                <input type="text" placeholder="Pseudo">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Mot de passe">
+                                <input type="password confirmation" placeholder="Confirmation du Mot de passe">
+                                <button type="submit" class="btn">Inscription</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+   
+        
+
+           <!-- footer -->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                       <h3>Telechargez notre Application</h3> 
+                       <p>Telechargez notre Application pour Android et IOS</p>
+                       <div class="app-logo">
+                           <img src="appstore-logo.png">
+                           <img src="playstore-logo.png">
+                       </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="" >
+                        <p></p>
+                     </div>
+                     <div class="footer-col-3">
+                        <h3>Liens Utiles</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog</li>
+                            <li>Politique de retour</li>
+                            <li>Affiliation</li>
+                         </ul>
+                     </div>
+                     <div class="footer-col-4">
+                        <h3>Suivez nous</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                     </div>
+                </div>
+                
+                
+
+            </div>
+
+        </div>
+
+
+        <!-----------js for toggle Form ----------->
+
+        <script>
+            var LoginForm = document.getElementById("LoginForm");
+            var RegForm = document.getElementById("RegForm");
+            var Indicator = document.getElementById("Indicator");
+
+            function register(){
+                    RegForm.style.transform = "translateX(0px)";
+                    LoginForm.style.transform = "translateX(0px)";   
+                    Indicator.style.transform = "translateX(100px)";             
+                }
+            function login(){
+                    RegForm.style.transform = "translateX(300px)";
+                    LoginForm.style.transform = "translateX(300px)";                
+                    Indicator.style.transform = "translateX(0px)";   
+                }
+        </script>
+        
+
+
+
+
+
+</body>
+</html>
